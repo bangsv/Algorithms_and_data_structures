@@ -1,6 +1,6 @@
 # Algorithms_and_data_structures
 
---- Alg_SD_LB_8/Alg_LB_8
+- Alg_SD_LB_8/Alg_LB_8
 
 Implementation of a table on a binary tree + implementation of the task.
 Task:
