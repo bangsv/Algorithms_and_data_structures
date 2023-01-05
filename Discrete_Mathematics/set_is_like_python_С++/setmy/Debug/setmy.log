@@ -1,0 +1,15 @@
+﻿  Source_set.cpp
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(55,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(55,37): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(70,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(81,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(92,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(92,33): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(102,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(105,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(116,11): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(126,20): warning C4018: <=: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Source_set.cpp(134,20): warning C4018: <: несоответствие типов со знаком и без знака
+  setmy.cpp
+  Создание кода...
+  setmy.vcxproj -> D:\Desktop\Project_C++\Discrete_Mathematics\set_is_like_python_С++\setmy\Debug\setmy.exe
