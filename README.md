@@ -10,7 +10,7 @@
   
 - Data_Structures
 
-   Implementation of data structures in C++, currently only the stack
+   Implementation of data structures in C++
 
 - Discrete_Mathematics
 
