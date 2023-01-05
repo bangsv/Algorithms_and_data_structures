@@ -1,0 +1,9 @@
+﻿  Alg_SD_LB_6.cpp
+D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Fifo.h(5,23): warning C4091: typedef : пропускается слева от "element", когда ни одна переменная не объявлена
+D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Fifo.h(6,22): warning C4091: typedef : пропускается слева от "List_2", когда ни одна переменная не объявлена
+D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Stack.h(5,23): warning C4091: typedef : пропускается слева от "element", когда ни одна переменная не объявлена
+D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Stack.h(7,20): warning C4091: typedef : пропускается слева от "List", когда ни одна переменная не объявлена
+D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Alg_SD_LB_6.cpp(13,2): warning C4091: typedef : пропускается слева от "element", когда ни одна переменная не объявлена
+D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Alg_SD_LB_6.cpp(19,2): warning C4091: typedef : пропускается слева от "List", когда ни одна переменная не объявлена
+D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Alg_SD_LB_6.cpp(27,2): warning C4091: typedef : пропускается слева от "List_2", когда ни одна переменная не объявлена
+  Alg_SD_LB_6.vcxproj -> D:\Desktop\Project C++\Aldorith and SD\Alg_SD_LB_6\Debug\Alg_SD_LB_6.exe

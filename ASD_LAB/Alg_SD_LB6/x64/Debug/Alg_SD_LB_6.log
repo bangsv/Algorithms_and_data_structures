@@ -1,0 +1,8 @@
+﻿  Alg_SD_LB_6.cpp
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_6\Fifo_Header.h(8,2): warning C4091: typedef : пропускается слева от "element_Fifo", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_6\Fifo_Header.h(14,2): warning C4091: typedef : пропускается слева от "List_Fifo", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_6\Stack_Header.h(9,2): warning C4091: typedef : пропускается слева от "element_Stack", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_6\Stack_Header.h(15,2): warning C4091: typedef : пропускается слева от "List_Stack", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_6\Task_Header.h(12,2): warning C4091: typedef : пропускается слева от "TInquiry", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_6\Alg_SD_LB_6.cpp(22,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Alg_SD_LB_6.vcxproj -> D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_6\x64\Debug\Alg_SD_LB_6.exe
