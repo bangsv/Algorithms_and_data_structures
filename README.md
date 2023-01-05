@@ -2,7 +2,7 @@
 
 - Algorithms
 
-  This folder contains sorting and search algorithms for an array in C++
+   This folder contains sorting and search algorithms for an array in C++
   
 - Data_Structures
 
