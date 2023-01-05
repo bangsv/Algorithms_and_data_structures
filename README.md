@@ -1,4 +1,8 @@
-# Algorithms_and_data_structures
+# My lib
+
+- ASD_LAB
+ 
+   Solving problems on algorithms and data structures
 
 - Algorithms
 
@@ -6,4 +10,8 @@
   
 - Data_Structures
 
-  Implementation of data structures in C++, currently only the stack
+   Implementation of data structures in C++, currently only the stack
+
+- Discrete_Mathematics
+
+   Implementations of classes for working with relations in the form of a binary matrix and working with sets
