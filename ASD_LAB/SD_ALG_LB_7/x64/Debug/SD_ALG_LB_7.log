@@ -1,0 +1,21 @@
+﻿  SD_ALG_LB_7.cpp
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\HeaderTree.h(7,23): warning C4091: typedef : пропускается слева от "element", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SD_ALG_LB_7.cpp(15,47): warning C4312: приведение типов: преобразование из "int" в "BaseType" большего размера
+  SourceTree.cpp
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\HeaderTree.h(7,23): warning C4091: typedef : пропускается слева от "element", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(19,2): warning C4091: typedef : пропускается слева от "element", когда ни одна переменная не объявлена
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(38,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(155,44): warning C4311: приведение типов: усечение указателя из "BaseType" в "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(155,44): warning C4302: приведение типов: усечение из "BaseType" к "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(155,86): warning C4311: приведение типов: усечение указателя из "BaseType" в "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(155,86): warning C4302: приведение типов: усечение из "BaseType" к "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(156,43): warning C4311: приведение типов: усечение указателя из "BaseType" в "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(156,43): warning C4302: приведение типов: усечение из "BaseType" к "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(168,30): warning C4311: приведение типов: усечение указателя из "BaseType" в "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(168,30): warning C4302: приведение типов: усечение из "BaseType" к "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(184,32): warning C4311: приведение типов: усечение указателя из "BaseType" в "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(184,32): warning C4302: приведение типов: усечение из "BaseType" к "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(186,45): warning C4311: приведение типов: усечение указателя из "BaseType" в "int"
+D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\SourceTree.cpp(186,45): warning C4302: приведение типов: усечение из "BaseType" к "int"
+  Создание кода...
+  SD_ALG_LB_7.vcxproj -> D:\Desktop\Project_C++\Aldorith and SD\Alg_SD_LB_7\SD_ALG_LB_7\x64\Debug\SD_ALG_LB_7.exe
