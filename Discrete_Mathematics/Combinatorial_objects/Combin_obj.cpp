@@ -80,3 +80,31 @@ bool Permutations(vec_int& a, int n) {
         swap(a, l++, r--);
     return true;
 }
+
+bool Generating_placements_Array(int* a, int n, int m)
+{
+	int j;
+	do   {
+		j = n - 1;
+		while (j != -1 && a[j] >= a[j + 1]) j--;
+		if (j == -1)
+			return false; 
+		int k = n - 1;
+		while (a[j] >= a[k]) k--;
+		swap(a, j, k);
+		int l = j + 1, r = n - 1;
+		while (l < r)
+			swap(a, l++, r--);
+	} while (j > m - 1);
+	return true;
+}
+void Print_Array(int* a, int n) 
+{
+	static int num = 1; 
+	cout.width(3); 
+	cout << num++ << ":  ";
+	for (int i = 0; i < n; i++)
+		cout << a[i] << " ";
+	cout << endl;
+}
+
