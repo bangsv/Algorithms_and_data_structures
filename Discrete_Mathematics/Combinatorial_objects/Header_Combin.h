@@ -19,3 +19,7 @@ void Print(vec_int& a, int n); // Suitable for displaying Combinations and Permu
 bool Permutations(vec_int& a, int n);
 
 void swap(vec_int& a, int i, int j);
+
+bool Generating_placements_Array(int* a, int n, int m);
+void Print_Array(int* a, int n);
+
