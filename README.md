@@ -15,3 +15,8 @@
 - Discrete_Mathematics
 
    Implementations of classes for working with relations in the form of a binary matrix and working with sets
+
+- Computational_Mathematics 
+ 
+   Laboratory work in computational mathematics
+ 
