@@ -408,9 +408,8 @@ private:
 
 std::ostream& operator<<(std::ostream& os, const Matrix& m) {
     for (int i = 0; i < m.matrix.size(); i++) {
-        for (int j = 0; j < m.matrix[i].size(); j++) {
+        for (int j = 0; j < m.matrix[i].size(); j++)
             os << m.matrix[i][j] << "\t";
-        }
         os << std::endl;
     }
     return os;
@@ -430,35 +429,36 @@ Matrix operator * (Matrix one, Matrix two) {
 
     Matrix operator - (Matrix one, Matrix two) {
         Matrix result;
-        for (int i = 0; i < one.matrix.size(); i++) {
-            std::vector<double> row;
-            // Subtract the elements of the given matrix from the elements of the current matrix
-            for (int j = 0; j < one.matrix[i].size(); j++) {
-                row.push_back(one.matrix[i][j] - two.matrix[i][j]);
-            }
-            result.matrix.push_back(row);
+        for(int i = 0; i < one.matrix.size(); i++){
+            std::vector<double>  temporary_vec;
+            std::transform(one.matrix[i].begin(), one.matrix[i].end(), two.matrix[i].begin(), 
+            std::back_inserter(temporary_vec), std::minus<double>());
+            result.matrix.push_back(temporary_vec);
         }
         return result;
     }
 
+            /**
+ * This code uses the std::transform function to add the elements of two matrices, 
+ * one and two, and store the result in a third matrix, result.
+ * The std::plus<double>() function is used to add the elements of the matrices.
+ * The result is stored in a temporary vector, temporary_vec, which is then pushed back into the result matrix.
+ */
     Matrix operator + (Matrix one, Matrix two) {
         Matrix result;
-        for (int i = 0; i < one.matrix.size(); i++) {
-            std::vector<double> row;
-            // Add the elements of the given matrix to the elements of the current matrix 
-            for (int j = 0; j < one.matrix[i].size(); j++) {
-                row.push_back(one.matrix[i][j] + two.matrix[i][j]);
-            }
-            result.matrix.push_back(row);
+        for(int i = 0; i < one.matrix.size(); i++){
+            std::vector<double>  temporary_vec; // temporary vector for each row 
+            std::transform(one.matrix[i].begin(), one.matrix[i].end(), two.matrix[i].begin(), 
+            std::back_inserter(temporary_vec), std::plus<double>());
+            result.matrix.push_back(temporary_vec);
         }
         return result;
     }
 
 
 std::ostream& operator<<(std::ostream& os, const std::vector<double>& vec) {
-    for (int i = 0; i < vec.size(); i++) {
+    for (int i = 0; i < vec.size(); i++) 
         os << "x"<< i +1<<": "<< vec[i] << std::endl;
-    }
     os << std::endl;
     return os;
 } // *********************************************************************************************************************
