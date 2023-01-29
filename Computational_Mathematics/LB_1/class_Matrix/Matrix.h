@@ -8,7 +8,7 @@
  * Matrix class
  * 
  * This class is used to represent a matrix of numbers. It provides methods for performing 
- * operations on the matrix such as addition, subtraction, multiplication, and division.
+ * operations on the matrix such as addition, subtraction, multiplication, and etc.
  */
 class Matrix {
 public:
@@ -61,7 +61,7 @@ public:
 /**
  * Calculates the determinant of a matrix.
  * 
- * @return double  The determinant of the matrix
+ * @return int  The determinant of the matrix
  */
     int Determinant ();
 
