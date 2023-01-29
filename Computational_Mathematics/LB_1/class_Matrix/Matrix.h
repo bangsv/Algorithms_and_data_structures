@@ -66,6 +66,13 @@ public:
     int Determinant ();
 
 /**
+ * Calculates the determinant of a matrix using the Gaussian elimination method.
+ * 
+ * @returns The determinant of the matrix as a double.
+ */
+    double Determinant_Gausse();
+
+/**
  * T() is a function that transposes a matrix and swaps it with the original matrix.
  * 
  * @param matrix The matrix to be transposed and swapped.
@@ -220,6 +227,8 @@ private:
         return true;
     } 
 
+
+// Input matrix 
     Matrix::Matrix(int rows, int columns, int r) {
         for (int i = 0; i < rows; i++) {
             std::vector<double> row;
@@ -279,6 +288,33 @@ private:
         return det;   
     }
 
+    double Matrix::Determinant_Gausse() {
+        double det = 1;
+
+        for (int i = 0; i < matrix.size(); i++) {
+            int pivot = i;
+            for (int j = i + 1; j < matrix.size(); j++) {
+                if (fabs(matrix[j][i]) > fabs(matrix[pivot][i])) {
+                    pivot = j;
+                }
+            }
+            std::swap(matrix[i], matrix[pivot]);
+            if (pivot != i) {
+                det *= -1;
+            }
+
+            det *= matrix[i][i];
+            for (int j = i + 1; j < matrix.size(); j++) {
+                double t = matrix[j][i] / matrix[i][i];
+                for (int k = i + 1; k < matrix.size(); k++) {
+                    matrix[j][k] -= t * matrix[i][k];
+                }
+                matrix[j][i] = 0;
+            }
+        }
+
+        return det;
+    }
 
     void Matrix::T () { // Transpose a matrix
         Matrix mat(matrix[0].size(), matrix.size());
@@ -290,52 +326,37 @@ private:
         swap_matrix(mat);
     }
 
-
     std::vector<double> Matrix::Gaussian_8(std::vector<double> b) {
-        int n = matrix.size();
-        // Search for maximum in this column 
-        for (int k = 0; k < n; k++)
-        {
-        // Find the maximum element in the column 
-            int i_max = k;
-            int val_max = abs(matrix[k][k]);
-            for (int i = k + 1; i < n; i++)
-            {
-                if (abs(matrix[i][k]) > val_max)
-                {
-                    i_max = i;
-                    val_max = abs(matrix[i][k]);
+       // Reduction to a triangular form
+        for (int i = 0; i < matrix.size(); i++) {
+            int pivot = i;
+            for (int j = i + 1; j < matrix.size(); j++) {
+                if (fabs(matrix[j][i]) > fabs(matrix[pivot][i])) {
+                    pivot = j;
                 }
             }
+            std::swap(matrix[i], matrix[pivot]);
+            std::swap(b[i], b[pivot]);
 
-            // Swap the maximum row with current row (column by column)
-            std::swap(matrix[i_max], matrix[k]);
-            std::swap(b[i_max], b[k]);
-
-            // Make all rows below this one 0 in current column 
-            for (int i = k + 1; i < n; i++)
-            {
-                double c = -matrix[i][k] / matrix[k][k];
-                for (int j = k; j < n; j++)
-                {
-                    if (k == j)
-                        matrix[i][j] = 0;
-                    else
-                        matrix[i][j] += c * matrix[k][j];
+            for (int j = i + 1; j < matrix.size(); j++) {
+                double t = matrix[j][i] / matrix[i][i];
+                for (int k = i + 1; k < matrix.size(); k++) {
+                    matrix[j][k] -= t * matrix[i][k];
                 }
-                b[i] += c * b[k];
+                b[j] -= t * b[i];
+                matrix[j][i] = 0;
             }
         }
 
-        // Solve equation Ax=b for an upper triangular matrix A 
-        std::vector<double> x(n);
-        for (int i = n - 1; i >= 0; i--)
-        {
-            x[i] = b[i];
-            for (int j = i + 1; j < n; j++)
-                x[i] -= matrix[i][j] * x[j];
-            x[i] /= matrix[i][i];
+        // reverse motion
+        std::vector<double> x(matrix.size());
+        for (int i = matrix.size() - 1; i >= 0; i--) {
+            for (int j = i + 1; j < matrix.size(); j++) {
+                b[i] -= matrix[i][j] * x[j];
+            }
+            x[i] = b[i] / matrix[i][i];
         }
+
         return x;
     }
 
@@ -455,10 +476,9 @@ Matrix operator * (Matrix one, Matrix two) {
         return result;
     }
 
-
-std::ostream& operator<<(std::ostream& os, const std::vector<double>& vec) {
-    for (int i = 0; i < vec.size(); i++) 
-        os << "x"<< i +1<<": "<< vec[i] << std::endl;
-    os << std::endl;
-    return os;
+    std::ostream& operator<<(std::ostream& os, const std::vector<double>& vec) {
+        for (int i = 0; i < vec.size(); i++) 
+            os << "x"<< i +1<<": "<< vec[i] << std::endl;
+        os << std::endl;
+        return os;
 } // *********************************************************************************************************************

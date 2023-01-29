@@ -39,6 +39,4 @@ int main() {
     std::cout << "x_straight: " << std::endl << x_straight; 
     std::cout << "x_reverse: " << std::endl << x_reverse; 
     std::cout << "====================" << std::endl;
-
-    return 0;
 }
