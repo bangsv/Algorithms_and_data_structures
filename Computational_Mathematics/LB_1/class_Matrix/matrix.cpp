@@ -237,6 +237,15 @@
         return x;
     }
 
+        bool check_inf(std::vector<double> x){
+        for (int i = 0; i < x.size(); i++) {
+            if (x[i] == std::numeric_limits<double>::infinity()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 std::ostream& operator<<(std::ostream& os, const Matrix& m) {
     for (int i = 0; i < m.matrix.size(); i++) {

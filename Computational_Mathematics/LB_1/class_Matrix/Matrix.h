@@ -135,6 +135,14 @@ public:
     std::vector<double> Reverse_Gaussian_stroke();
 
 /**
+ * @brief Checks if a vector contains infinity
+ * 
+ * @param x Vector to be checked
+ * @return True if vector contains infinity, false otherwise
+ */
+    friend bool check_inf(std::vector<double> x);
+
+/**
  * Adds two matrices together and returns the result
  * @param m The matrix to add to the current matrix
  * @return The result of the addition
@@ -426,6 +434,15 @@ private:
         return x;
     }
 
+
+    bool check_inf(std::vector<double> x){
+        for (int i = 0; i < x.size(); i++) {
+            if (x[i] == std::numeric_limits<double>::infinity()) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 std::ostream& operator<<(std::ostream& os, const Matrix& m) {
     for (int i = 0; i < m.matrix.size(); i++) {
