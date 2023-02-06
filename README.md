@@ -18,5 +18,5 @@
 
 - Computational_Mathematics 
  
-   Laboratory work in computational mathematics
+   Laboratory work in computational mathematics (Implementation of modules for solving various mathematical problems )
  
