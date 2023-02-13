@@ -35,10 +35,6 @@ int main() {
     std::cout << "====================" << std::endl;
     //x_straight = exis_1.Reverse_Gaussian_stroke(); 
     x_reverse = exis_1_2.Straight_Gaussian_stroke();
-    if(check_inf(x_reverse)) {
-        std::cout << "No solution" << std::endl;
-        return 0; 
-    }
 
     std::cout << "x_straight: " << std::endl << x_straight; 
     std::cout << "x_reverse: " << std::endl << x_reverse << std::endl ; 

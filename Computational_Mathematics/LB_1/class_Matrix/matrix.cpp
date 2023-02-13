@@ -302,3 +302,10 @@ Matrix operator * (Matrix one, Matrix two) {
         os << std::endl;
         return os;
 } // *********************************************************************************************************************
+
+std::ostream& operator<<(std::ostream& os, std::vector<double> m){
+    for (int i = 0; i < m.size(); i++) {
+        os << m[i] << " ";
+    }
+    return os;
+}
